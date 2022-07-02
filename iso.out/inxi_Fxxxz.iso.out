@@ -1,0 +1,90 @@
+System:
+  Kernel: 5.18.5-arch1-1 arch: x86_64 bits: 64 compiler: gcc v: 12.1.0
+    Desktop: Xfce v: 4.16.0 tk: Gtk v: 3.24.29 info: xfce4-panel wm: xfwm
+    v: 4.16.1 vt: 1 dm: LightDM v: 1.30.0 Distro: EndeavourOS
+    base: Arch Linux
+Machine:
+  Type: Laptop System: TUXEDO product: TUXEDO Polaris 17 AMD Gen1 v: Standard
+    serial: <superuser required>
+  Mobo: NB02 model: POLARIS1701A1650TI v: Standard
+    serial: <superuser required> UEFI: American Megatrends v: N.1.20.A03
+    date: 12/10/2020
+Battery:
+  ID-1: BAT0 charge: 54.7 Wh (100.0%) condition: 54.7/62.3 Wh (87.8%)
+    volts: 16.5 min: 15.2 model: standard type: Li-ion serial: <filter>
+    status: full
+CPU:
+  Info: 6-core model: AMD Ryzen 5 4600H with Radeon Graphics bits: 64
+    type: MT MCP smt: enabled arch: Zen 2 rev: 1 cache: L1: 384 KiB L2: 3 MiB
+    L3: 8 MiB
+  Speed (MHz): avg: 1395 high: 1406 min/max: 1400/3000 boost: enabled
+    cores: 1: 1406 2: 1392 3: 1397 4: 1397 5: 1397 6: 1392 7: 1393 8: 1397
+    9: 1397 10: 1394 11: 1397 12: 1391 bogomips: 71889
+  Flags: avx avx2 ht lm nx pae sse sse2 sse3 sse4_1 sse4_2 sse4a ssse3 svm
+Graphics:
+  Device-1: NVIDIA TU116M [GeForce GTX 1650 Ti Mobile]
+    vendor: Tongfang Hongkong driver: nouveau v: kernel arch: Turing pcie:
+    speed: Unknown lanes: 63 ports: active: none empty: DP-1,DP-2,HDMI-A-1
+    bus-ID: 01:00.0 chip-ID: 10de:2192 class-ID: 0300
+  Device-2: AMD Renoir vendor: Tongfang Hongkong driver: amdgpu v: kernel
+    arch: GCN 5.1 pcie: speed: 16 GT/s lanes: 16 ports: active: eDP-1
+    empty: none bus-ID: 06:00.0 chip-ID: 1002:1636 class-ID: 0300
+  Device-3: Chicony HD Webcam type: USB driver: uvcvideo bus-ID: 3-4:4
+    chip-ID: 04f2:b641 class-ID: 0e02
+  Display: server: X.Org v: 21.1.3 compositor: xfwm v: 4.16.1 driver: X:
+    loaded: amdgpu unloaded: modesetting,radeon alternate: fbdev,vesa
+    gpu: amdgpu display-ID: :0.0 screens: 1
+  Screen-1: 0 s-res: 1920x1080 s-dpi: 96 s-size: 508x285mm (20.00x11.22")
+    s-diag: 582mm (22.93")
+  Monitor-1: eDP-1 mapped: eDP model: LG Display 0x0620 res: 1920x1080
+    hz: 144 dpi: 128 size: 382x215mm (15.04x8.46") diag: 438mm (17.3") modes:
+    max: 1920x1080 min: 640x480
+  OpenGL: renderer: AMD RENOIR (LLVM 13.0.1 DRM 3.46 5.18.5-arch1-1)
+    v: 4.6 Mesa 22.1.2 direct render: Yes
+Audio:
+  Device-1: NVIDIA TU116 High Definition Audio vendor: Tongfang Hongkong
+    driver: snd_hda_intel v: kernel pcie: speed: Unknown lanes: 63
+    bus-ID: 01:00.1 chip-ID: 10de:1aeb class-ID: 0403
+  Device-2: AMD Family 17h/19h HD Audio vendor: Tongfang Hongkong
+    driver: snd_hda_intel v: kernel pcie: speed: 16 GT/s lanes: 16
+    bus-ID: 06:00.6 chip-ID: 1022:15e3 class-ID: 0403
+  Sound Server-1: ALSA v: k5.18.5-arch1-1 running: yes
+  Sound Server-2: PulseAudio v: 16.1 running: no
+  Sound Server-3: PipeWire v: 0.3.52 running: yes
+Network:
+  Device-1: Realtek RTL8111/8168/8411 PCI Express Gigabit Ethernet
+    vendor: Tongfang Hongkong driver: r8169 v: kernel pcie: speed: 2.5 GT/s
+    lanes: 1 port: e000 bus-ID: 02:00.0 chip-ID: 10ec:8168 class-ID: 0200
+  IF: enp2s0 state: down mac: <filter>
+  Device-2: Intel Wi-Fi 6 AX200 driver: iwlwifi v: kernel pcie:
+    speed: 5 GT/s lanes: 1 bus-ID: 03:00.0 chip-ID: 8086:2723 class-ID: 0280
+  IF: wlan0 state: up mac: <filter>
+Bluetooth:
+  Device-1: Intel AX200 Bluetooth type: USB driver: btusb v: 0.8
+    bus-ID: 5-4:3 chip-ID: 8087:0029 class-ID: e001
+  Report: bt-adapter ID: hci0 rfk-id: 0 state: up address: <filter>
+Drives:
+  Local Storage: total: 2.74 TiB used: 592 KiB (0.0%)
+  ID-1: /dev/nvme0n1 vendor: Samsung model: SSD 970 EVO Plus 2TB
+    size: 1.82 TiB speed: 31.6 Gb/s lanes: 4 type: SSD serial: <filter>
+    rev: 2B2QEXM7 temp: 38.9 C scheme: GPT
+  ID-2: /dev/nvme1n1 vendor: Samsung model: SSD 960 EVO 1TB
+    size: 931.51 GiB speed: 31.6 Gb/s lanes: 4 type: SSD serial: <filter>
+    rev: 1B7QCXE7 temp: 32.9 C scheme: GPT
+  ID-3: /dev/sda type: USB vendor: Transcend model: JetFlash 4GB
+    size: 3.77 GiB type: SSD serial: <filter> rev: 1100 scheme: MBR
+  ID-4: /dev/sdb type: USB model: USB Flash Disk size: 7.62 GiB type: SSD
+    serial: <filter> rev: 1100 scheme: MBR
+Partition:
+  ID-1: / size: 10 GiB used: 2.2 MiB (0.0%) fs: overlay source: ERR-102
+Swap:
+  Alert: No swap data was found.
+Sensors:
+  System Temperatures: cpu: 42.0 C mobo: N/A
+  Fan Speeds (RPM): N/A
+  GPU: device: nouveau temp: N/A device: amdgpu temp: 39.0 C
+Info:
+  Processes: 296 Uptime: 3m wakeups: 1 Memory: 15.05 GiB
+  used: 1.18 GiB (7.9%) Init: systemd v: 251 default: multi-user Compilers:
+  gcc: 12.1.0 Packages: pacman: 898 Shell: Bash v: 5.1.16
+  running-in: xfce4-terminal inxi: 3.3.18

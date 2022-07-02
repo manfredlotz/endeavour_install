@@ -1,0 +1,127 @@
+System:
+  Kernel: 5.18.5-arch1-1 arch: x86_64 bits: 64 compiler: gcc v: 12.1.0
+    parameters: initrd=\arch\boot\intel-ucode.img
+    initrd=\arch\boot\amd-ucode.img
+    initrd=\arch\boot\x86_64\initramfs-linux.img archisobasedir=arch
+    archisolabel=EOS_202206 cow_spacesize=10G
+    module_blacklist=nvidia,nvidia_modeset,nvidia_uvm,nvidia_drm
+    nouveau.modeset=1 i915.modeset=1 radeon.modeset=1 nvme_load=yes
+  Desktop: Xfce v: 4.16.0 tk: Gtk v: 3.24.29 info: xfce4-panel wm: xfwm
+    v: 4.16.1 vt: 1 dm: LightDM v: 1.30.0 Distro: EndeavourOS base: Arch Linux
+Machine:
+  Type: Laptop System: TUXEDO product: TUXEDO Polaris 17 AMD Gen1 v: Standard
+    serial: <superuser required>
+  Mobo: NB02 model: POLARIS1701A1650TI v: Standard
+    serial: <superuser required> UEFI: American Megatrends v: N.1.20.A03
+    date: 12/10/2020
+Battery:
+  ID-1: BAT0 charge: 54.7 Wh (100.0%) condition: 54.7/62.3 Wh (87.8%)
+    volts: 16.5 min: 15.2 model: standard type: Li-ion serial: <filter>
+    status: full
+CPU:
+  Info: model: AMD Ryzen 5 4600H with Radeon Graphics bits: 64 type: MT MCP
+    arch: Zen 2 gen: 3 built: 2020-22 process: TSMC n7 (7nm) family: 0x17 (23)
+    model-id: 0x60 (96) stepping: 1 microcode: 0x8600103
+  Topology: cpus: 1x cores: 6 tpc: 2 threads: 12 smt: enabled cache:
+    L1: 384 KiB desc: d-6x32 KiB; i-6x32 KiB L2: 3 MiB desc: 6x512 KiB
+    L3: 8 MiB desc: 2x4 MiB
+  Speed (MHz): avg: 1464 high: 2216 min/max: 1400/3000 boost: enabled
+    scaling: driver: acpi-cpufreq governor: schedutil cores: 1: 2216 2: 1397
+    3: 1397 4: 1397 5: 1391 6: 1391 7: 1397 8: 1397 9: 1397 10: 1397 11: 1397
+    12: 1396 bogomips: 71896
+  Flags: avx avx2 ht lm nx pae sse sse2 sse3 sse4_1 sse4_2 sse4a ssse3 svm
+  Vulnerabilities:
+  Type: itlb_multihit status: Not affected
+  Type: l1tf status: Not affected
+  Type: mds status: Not affected
+  Type: meltdown status: Not affected
+  Type: mmio_stale_data status: Not affected
+  Type: spec_store_bypass
+    mitigation: Speculative Store Bypass disabled via prctl
+  Type: spectre_v1
+    mitigation: usercopy/swapgs barriers and __user pointer sanitization
+  Type: spectre_v2 mitigation: Retpolines, IBPB: conditional, IBRS_FW,
+    STIBP: conditional, RSB filling
+  Type: srbds status: Not affected
+  Type: tsx_async_abort status: Not affected
+Graphics:
+  Device-1: NVIDIA TU116M [GeForce GTX 1650 Ti Mobile]
+    vendor: Tongfang Hongkong driver: nouveau v: kernel
+    alternate: nvidia_drm,nvidia non-free: 515.xx+
+    status: current (as of 2022-06) arch: Turing process: TSMC 12nm
+    built: 2018-22 pcie: speed: Unknown lanes: 63 link-max: gen: 6
+    speed: 64 GT/s ports: active: none empty: DP-1,DP-2,HDMI-A-1
+    bus-ID: 01:00.0 chip-ID: 10de:2192 class-ID: 0300
+  Device-2: AMD Renoir vendor: Tongfang Hongkong driver: amdgpu v: kernel
+    arch: GCN 5.1 process: TSMC n7 (7nm) built: 2018-21 pcie: gen: 4
+    speed: 16 GT/s lanes: 16 ports: active: eDP-1 empty: none bus-ID: 06:00.0
+    chip-ID: 1002:1636 class-ID: 0300
+  Device-3: Chicony HD Webcam type: USB driver: uvcvideo bus-ID: 3-4:4
+    chip-ID: 04f2:b641 class-ID: 0e02
+  Display: server: X.Org v: 21.1.3 compositor: xfwm v: 4.16.1 driver: X:
+    loaded: amdgpu unloaded: modesetting,radeon alternate: fbdev,vesa
+    gpu: amdgpu display-ID: :0.0 screens: 1
+  Screen-1: 0 s-res: 1920x1080 s-dpi: 96 s-size: 508x285mm (20.00x11.22")
+    s-diag: 582mm (22.93")
+  Monitor-1: eDP-1 mapped: eDP model: LG Display 0x0620 built: 2018
+    res: 1920x1080 hz: 144 dpi: 128 gamma: 1.2 size: 382x215mm (15.04x8.46")
+    diag: 438mm (17.3") ratio: 16:9 modes: max: 1920x1080 min: 640x480
+  OpenGL: renderer: AMD RENOIR (LLVM 13.0.1 DRM 3.46 5.18.5-arch1-1)
+    v: 4.6 Mesa 22.1.2 direct render: Yes
+Audio:
+  Device-1: NVIDIA TU116 High Definition Audio vendor: Tongfang Hongkong
+    driver: snd_hda_intel v: kernel pcie: speed: Unknown lanes: 63 link-max:
+    gen: 6 speed: 64 GT/s bus-ID: 01:00.1 chip-ID: 10de:1aeb class-ID: 0403
+  Device-2: AMD Family 17h/19h HD Audio vendor: Tongfang Hongkong
+    driver: snd_hda_intel v: kernel pcie: gen: 4 speed: 16 GT/s lanes: 16
+    bus-ID: 06:00.6 chip-ID: 1022:15e3 class-ID: 0403
+  Sound Server-1: ALSA v: k5.18.5-arch1-1 running: yes
+  Sound Server-2: PulseAudio v: 16.1 running: no
+  Sound Server-3: PipeWire v: 0.3.52 running: yes
+Network:
+  Device-1: Realtek RTL8111/8168/8411 PCI Express Gigabit Ethernet
+    vendor: Tongfang Hongkong driver: r8169 v: kernel pcie: gen: 1
+    speed: 2.5 GT/s lanes: 1 port: e000 bus-ID: 02:00.0 chip-ID: 10ec:8168
+    class-ID: 0200
+  IF: enp2s0 state: down mac: <filter>
+  Device-2: Intel Wi-Fi 6 AX200 driver: iwlwifi v: kernel modules: wl pcie:
+    gen: 2 speed: 5 GT/s lanes: 1 bus-ID: 03:00.0 chip-ID: 8086:2723
+    class-ID: 0280
+  IF: wlan0 state: up mac: <filter>
+Bluetooth:
+  Device-1: Intel AX200 Bluetooth type: USB driver: btusb v: 0.8
+    bus-ID: 5-4:3 chip-ID: 8087:0029 class-ID: e001
+  Report: bt-adapter ID: hci0 rfk-id: 0 state: up address: <filter>
+Drives:
+  Local Storage: total: 2.74 TiB used: 420 KiB (0.0%)
+  SMART Message: Unable to run smartctl. Root privileges required.
+  ID-1: /dev/nvme0n1 maj-min: 259:4 vendor: Samsung
+    model: SSD 970 EVO Plus 2TB size: 1.82 TiB block-size: physical: 512 B
+    logical: 512 B speed: 31.6 Gb/s lanes: 4 type: SSD serial: <filter>
+    rev: 2B2QEXM7 temp: 39.9 C scheme: GPT
+  ID-2: /dev/nvme1n1 maj-min: 259:0 vendor: Samsung model: SSD 960 EVO 1TB
+    size: 931.51 GiB block-size: physical: 512 B logical: 512 B
+    speed: 31.6 Gb/s lanes: 4 type: SSD serial: <filter> rev: 1B7QCXE7
+    temp: 38.9 C scheme: GPT
+  ID-3: /dev/sda maj-min: 8:0 type: USB vendor: Transcend
+    model: JetFlash 4GB size: 3.77 GiB block-size: physical: 512 B
+    logical: 512 B type: SSD serial: <filter> rev: 1100 scheme: MBR
+  SMART Message: Unknown USB bridge. Flash drive/Unsupported enclosure?
+  ID-4: /dev/sdb maj-min: 8:16 type: USB model: USB Flash Disk
+    size: 7.62 GiB block-size: physical: 512 B logical: 512 B type: SSD
+    serial: <filter> rev: 1100 scheme: MBR
+  SMART Message: Unknown USB bridge. Flash drive/Unsupported enclosure?
+Partition:
+  ID-1: / raw-size: N/A size: 10 GiB used: 2.2 MiB (0.0%) fs: overlay
+    source: ERR-102
+Swap:
+  Alert: No swap data was found.
+Sensors:
+  System Temperatures: cpu: 41.0 C mobo: N/A
+  Fan Speeds (RPM): N/A
+  GPU: device: nouveau temp: N/A device: amdgpu temp: 40.0 C
+Info:
+  Processes: 274 Uptime: 7m wakeups: 1 Memory: 15.05 GiB
+  used: 1.16 GiB (7.7%) Init: systemd v: 251 default: multi-user
+  tool: systemctl Compilers: gcc: 12.1.0 Packages: pacman: 898 lib: 212
+  Shell: Bash v: 5.1.16 running-in: xfce4-terminal inxi: 3.3.18

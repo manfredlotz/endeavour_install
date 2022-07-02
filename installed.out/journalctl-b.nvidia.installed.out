@@ -1,0 +1,25 @@
+Jul 02 07:04:09 manfred-tuxedopolaris17amdgen1 kernel: Command line: BOOT_IMAGE=/@/boot/vmlinuz-linux-zen root=UUID=0790d929-6ec0-4122-ba64-376f68bbf67b rw rootflags=subvol=@ cryptdevice=UUID=3cfb44c0-125f-43e8-b616-07b989a61644:luks-3cfb44c0-125f-43e8-b616-07b989a61644 root=/dev/mapper/luks-3cfb44c0-125f-43e8-b616-07b989a61644 loglevel=3 nowatchdog nvme_load=YES nvidia-drm.modeset=1
+Jul 02 07:04:09 manfred-tuxedopolaris17amdgen1 kernel: Kernel command line: BOOT_IMAGE=/@/boot/vmlinuz-linux-zen root=UUID=0790d929-6ec0-4122-ba64-376f68bbf67b rw rootflags=subvol=@ cryptdevice=UUID=3cfb44c0-125f-43e8-b616-07b989a61644:luks-3cfb44c0-125f-43e8-b616-07b989a61644 root=/dev/mapper/luks-3cfb44c0-125f-43e8-b616-07b989a61644 loglevel=3 nowatchdog nvme_load=YES nvidia-drm.modeset=1
+Jul 02 07:04:09 manfred-tuxedopolaris17amdgen1 kernel: nvidia: loading out-of-tree module taints kernel.
+Jul 02 07:04:09 manfred-tuxedopolaris17amdgen1 kernel: nvidia: module license 'NVIDIA' taints kernel.
+Jul 02 07:04:09 manfred-tuxedopolaris17amdgen1 kernel: nvidia: module verification failed: signature and/or required key missing - tainting kernel
+Jul 02 07:04:10 manfred-tuxedopolaris17amdgen1 kernel: nvidia-gpu 0000:01:00.3: enabling device (0000 -> 0002)
+Jul 02 07:04:10 manfred-tuxedopolaris17amdgen1 kernel: nvidia-nvlink: Nvlink Core is being initialized, major device number 510
+Jul 02 07:04:10 manfred-tuxedopolaris17amdgen1 kernel: nvidia 0000:01:00.0: enabling device (0000 -> 0003)
+Jul 02 07:04:10 manfred-tuxedopolaris17amdgen1 kernel: nvidia 0000:01:00.0: vgaarb: changed VGA decodes: olddecodes=io+mem,decodes=none:owns=none
+Jul 02 07:04:10 manfred-tuxedopolaris17amdgen1 kernel: NVRM: loading NVIDIA UNIX x86_64 Kernel Module  515.48.07  Fri May 27 03:26:43 UTC 2022
+Jul 02 07:04:11 manfred-tuxedopolaris17amdgen1 kernel: nvidia-modeset: Loading NVIDIA Kernel Mode Setting Driver for UNIX platforms  515.48.07  Fri May 27 03:18:00 UTC 2022
+Jul 02 07:04:11 manfred-tuxedopolaris17amdgen1 kernel: [drm] [nvidia-drm] [GPU ID 0x00000100] Loading driver
+Jul 02 07:04:11 manfred-tuxedopolaris17amdgen1 kernel: nvidia_uvm: module uses symbols from proprietary module nvidia, inheriting taint.
+Jul 02 07:04:11 manfred-tuxedopolaris17amdgen1 kernel: input: HDA NVidia HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:01.1/0000:01:00.1/sound/card0/input12
+Jul 02 07:04:11 manfred-tuxedopolaris17amdgen1 kernel: input: HDA NVidia HDMI/DP,pcm=7 as /devices/pci0000:00/0000:00:01.1/0000:01:00.1/sound/card0/input13
+Jul 02 07:04:11 manfred-tuxedopolaris17amdgen1 kernel: input: HDA NVidia HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:01.1/0000:01:00.1/sound/card0/input14
+Jul 02 07:04:11 manfred-tuxedopolaris17amdgen1 kernel: input: HDA NVidia HDMI/DP,pcm=9 as /devices/pci0000:00/0000:00:01.1/0000:01:00.1/sound/card0/input15
+Jul 02 07:04:11 manfred-tuxedopolaris17amdgen1 kernel: input: HDA NVidia HDMI/DP,pcm=10 as /devices/pci0000:00/0000:00:01.1/0000:01:00.1/sound/card0/input16
+Jul 02 07:04:11 manfred-tuxedopolaris17amdgen1 kernel: input: HDA NVidia HDMI/DP,pcm=11 as /devices/pci0000:00/0000:00:01.1/0000:01:00.1/sound/card0/input17
+Jul 02 07:04:11 manfred-tuxedopolaris17amdgen1 kernel: nvidia-uvm: Loaded the UVM driver, major device number 504.
+Jul 02 07:04:11 manfred-tuxedopolaris17amdgen1 kernel: [drm] Initialized nvidia-drm 0.0.0 20160202 for 0000:01:00.0 on minor 0
+Jul 02 07:04:10 manfred-tuxedopolaris17amdgen1 systemd-udevd[429]: nvidia: Process '/usr/bin/bash -c '/usr/bin/mknod -Z -m 666 /dev/nvidiactl c $(grep nvidia-frontend /proc/devices | cut -d \  -f 1) 255'' failed with exit code 1.
+Jul 02 07:04:11 manfred-tuxedopolaris17amdgen1 systemd-modules-load[383]: Inserted module 'nvidia_uvm'
+Jul 02 07:04:11 manfred-tuxedopolaris17amdgen1 systemd-udevd[414]: nvidia: Process '/usr/bin/bash -c 'for i in $(cat /proc/driver/nvidia/gpus/*/information | grep Minor | cut -d \  -f 4); do /usr/bin/mknod -Z -m 666 /dev/nvidia${i} c $(grep nvidia-frontend /proc/devices | cut -d \  -f 1) ${i}; done'' failed with exit code 1.
+Jul 02 07:04:11 manfred-tuxedopolaris17amdgen1 kernel: nvidia-gpu 0000:01:00.3: i2c timeout error e0000000
