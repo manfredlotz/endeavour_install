@@ -26,4 +26,7 @@ installed.out/dmesg.installed.out
 installed.out/inxi_Fxxxz.installed.out
 installed.out/journalctl-b.nouveau.installed.out
 installed.out/journalctl-b.nvidia.installed.out
+
+
+Output of `inxi -Faz | eos-sendlog` is here: https://clbin.com/2TWlS
 ```
